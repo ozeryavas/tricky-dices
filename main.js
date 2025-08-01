@@ -55,6 +55,11 @@ function rollDice() {
 
 document.getElementById("rollButton").addEventListener("click", rollDice);
 
+document.addEventListener("DOMContentLoaded", function () {
+  rollDice(); // İlk zarlar yüklensin
+  document.getElementById("rollButton").addEventListener("click", rollDice);
+});
+
 
 /* 
 When the sections with the following comment line are activated, the dice start to work in a rigged manner. 
